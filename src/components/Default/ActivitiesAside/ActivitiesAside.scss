@@ -1,0 +1,27 @@
+@import '../../../style/variables';
+
+.activities-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  min-height: 100%;
+
+  width: 117px;
+  background-color: $navbar-background-color;
+
+  &__navbar {
+    display: flex;
+    margin-bottom: 150px;
+  }
+  &__copyright {
+    span {
+      color: white;
+      font-size: 12px;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
+  }
+}
