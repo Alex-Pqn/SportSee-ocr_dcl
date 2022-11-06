@@ -1,15 +1,15 @@
-import './ActivitiesAside.scss';
+import './Aside.scss';
 
 import { Link } from 'react-router-dom';
 
-import DefaultIconCard from '../IconCard/IconCard';
+import DefaultIconCard from '../../Default/IconCard/IconCard';
 
 import IconYoga from '../../Icon/Yoga/Yoga';
 import IconSwimming from '../../Icon/Swimming/Swimming';
 import IconCycling from '../../Icon/Cycling/Cycling';
 import IconAlter from '../../Icon/Alter/Alter';
 
-const DefaultActivitiesAside = () => {
+const DashboardAside = () => {
   const copyrightYear = new Date().getFullYear();
 
   const YogaIconCard = DefaultIconCard(IconYoga);
@@ -50,4 +50,4 @@ const DefaultActivitiesAside = () => {
   );
 };
 
-export default DefaultActivitiesAside;
+export default DashboardAside;
