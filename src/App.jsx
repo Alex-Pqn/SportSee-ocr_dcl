@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
 import Header from './components/Default/Header/Header';
-import Home from './pages/Home/Home';
+import Dashboard from './pages/Dashboard/Dashboard';
 import Error404 from './pages/Error404/Error404';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/">
-          <Route index element={<Home />} />
+          <Route index element={<Dashboard />} />
           <Route path="home" element={<Navigate to="/" />} />
           <Route path="*" element={<Error404 />} />
         </Route>
