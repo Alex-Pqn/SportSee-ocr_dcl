@@ -4,6 +4,8 @@ import { userService } from '../../_services/user.service';
 import { useEffect, useState } from 'react';
 
 import DashboardAside from '../../components/Dashboard/Aside/Aside';
+import DashboardWelcome from '../../components/Dashboard/Welcome/Welcome';
+
 function Dashboard() {
   const userId = 12;
 
@@ -46,6 +48,17 @@ function Dashboard() {
       <aside className="dashboard__aside">
         <DashboardAside />
       </aside>
+      {!isUserLoading ? (
+        <section className="dashboard__body">
+          <div className="dashboard__welcome">
+            <DashboardWelcome userName={user.userInfos.firstName} />
+          </div>
+        </section>
+      ) : (
+        <div className="loading">
+          <span>Chargement des données...</span>
+        </div>
+      )}
     </div>
   );
 }
