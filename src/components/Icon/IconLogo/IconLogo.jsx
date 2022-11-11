@@ -1,4 +1,4 @@
-import './Logo.scss';
+import './IconLogo.scss';
 
 const IconLogo = () => {
   return (

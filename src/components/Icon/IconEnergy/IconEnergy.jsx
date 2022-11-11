@@ -1,4 +1,4 @@
-import './Energy.scss';
+import './IconEnergy.scss';
 
 const IconEnergy = () => {
   return (

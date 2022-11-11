@@ -1,4 +1,4 @@
-import './Cycling.scss';
+import './IconCycling.scss';
 
 const IconCycling = ({ color }) => {
   return (

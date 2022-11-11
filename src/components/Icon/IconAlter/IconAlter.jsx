@@ -1,4 +1,4 @@
-import './Alter.scss';
+import './IconAlter.scss';
 
 const IconAlter = ({ color }) => {
   return (

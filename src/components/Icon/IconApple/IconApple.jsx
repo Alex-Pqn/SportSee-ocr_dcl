@@ -1,4 +1,4 @@
-import './Apple.scss';
+import './IconApple.scss';
 
 const IconApple = () => {
   return (

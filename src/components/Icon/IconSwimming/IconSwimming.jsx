@@ -1,4 +1,4 @@
-import './Swimming.scss';
+import './IconSwimming.scss';
 
 const IconSwimming = ({ color }) => {
   return (

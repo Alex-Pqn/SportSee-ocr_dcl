@@ -1,4 +1,4 @@
-import './Yoga.scss';
+import './IconYoga.scss';
 
 const IconYoga = ({ color }) => {
   return (

@@ -1,4 +1,4 @@
-import './Cheeseburger.scss';
+import './IconCheeseburger.scss';
 
 const IconCheeseburger = () => {
   return (

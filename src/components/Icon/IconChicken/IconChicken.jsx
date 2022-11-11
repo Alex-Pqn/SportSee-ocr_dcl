@@ -1,4 +1,4 @@
-import './Chicken.scss';
+import './IconChicken.scss';
 
 const IconChicken = () => {
   return (
