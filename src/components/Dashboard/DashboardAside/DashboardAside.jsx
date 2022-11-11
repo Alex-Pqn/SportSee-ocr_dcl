@@ -1,13 +1,13 @@
-import './Aside.scss';
+import './DashboardAside.scss';
 
 import { Link } from 'react-router-dom';
 
-import DefaultIconCard from '../../Default/IconCard/IconCard';
+import DefaultIconCard from '../../Default/DefaultIconCard/DefaultIconCard';
 
-import IconYoga from '../../Icon/Yoga/Yoga';
-import IconSwimming from '../../Icon/Swimming/Swimming';
-import IconCycling from '../../Icon/Cycling/Cycling';
-import IconAlter from '../../Icon/Alter/Alter';
+import IconYoga from '../../Icon/IconYoga/IconYoga';
+import IconSwimming from '../../Icon/Swimming/IconSwimming';
+import IconCycling from '../../Icon/Cycling/IconCycling';
+import IconAlter from '../../Icon/IconAlter/IconAlter';
 
 const DashboardAside = () => {
   const copyrightYear = new Date().getFullYear();

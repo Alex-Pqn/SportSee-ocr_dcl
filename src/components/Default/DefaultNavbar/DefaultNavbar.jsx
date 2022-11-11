@@ -1,4 +1,4 @@
-import './Navbar.scss';
+import './DefaultNavbar.scss';
 
 import { Link } from 'react-router-dom';
 

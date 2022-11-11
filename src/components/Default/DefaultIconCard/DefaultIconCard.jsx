@@ -1,4 +1,4 @@
-import './IconCard.scss';
+import './DefaultIconCard.scss';
 
 const DefaultIconCard = (IconComponent) => (props) => {
   return (

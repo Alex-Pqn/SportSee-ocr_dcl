@@ -1,4 +1,4 @@
-import './Welcome.scss';
+import './DashboardWelcome.scss';
 
 const DashboardWelcome = ({ userName }) => {
   return (

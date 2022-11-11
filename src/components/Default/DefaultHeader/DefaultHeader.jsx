@@ -1,7 +1,7 @@
-import './Header.scss';
+import './DefaultHeader.scss';
 
-import DefaultNavbar from './../Navbar/Navbar';
-import IconLogo from './../../Icon/Logo/Logo';
+import DefaultNavbar from '../DefaultNavbar/DefaultNavbar';
+import IconLogo from '../../Icon/IconLogo/IconLogo';
 
 const DefaultHeader = () => {
   return (
