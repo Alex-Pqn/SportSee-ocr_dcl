@@ -1,18 +1,12 @@
+import UserInfosModel from './user.infos.model';
+import UserKeydataModel from './user.keydata.model';
+
 class UserModel {
   constructor(data) {
     this.id = data.id;
-    this.userInfos = {
-      firstName: data.userInfos.firstName,
-      lastName: data.userInfos.lastName,
-      age: data.userInfos.age,
-    };
-    this.todayScore = data.todayScore;
-    this.keyData = {
-      calorieCount: data.keyData.calorieCount,
-      proteinCount: data.keyData.proteinCount,
-      carbohydrateCount: data.keyData.carbohydrateCount,
-      lipidCount: data.keyData.lipidCount,
-    };
+    this.infos = new UserInfosModel(data.userInfos);
+    this.todayScore = data.todayScore || data.score;
+    this.keyData = new UserKeydataModel(data.keyData);
   }
 }
 
