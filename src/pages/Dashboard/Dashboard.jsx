@@ -3,8 +3,19 @@ import './Dashboard.scss';
 import { userService } from '../../_services/user.service';
 import { useEffect, useState } from 'react';
 
-import DashboardAside from '../../components/Dashboard/Aside/Aside';
-import DashboardWelcome from '../../components/Dashboard/Welcome/Welcome';
+import DashboardAside from '../../components/Dashboard/DashboardAside/DashboardAside';
+import DashboardWelcome from '../../components/Dashboard/DashboardWelcome/DashboardWelcome';
+import DashboardActivityChart from '../../components/Dashboard/DashboardActivityChart/DashboardActivityChart';
+import DashboardPerformanceChart from '../../components/Dashboard/DashboardPerformanceChart/DashboardPerformanceChart';
+import DashboardScoreChart from '../../components/Dashboard/DashboardScoreChart/DashboardScoreChart';
+import DashboardNutrientCard from '../../components/Dashboard/DashboardNutrientCard/DashboardNutrientCard';
+
+import DefaultIconCard from '../../components/Default/DefaultIconCard/DefaultIconCard';
+
+import IconEnergy from '../../components/Icon/IconEnergy/IconEnergy';
+import IconChicken from '../../components/Icon/IconChicken/IconChicken';
+import IconApple from '../../components/Icon/IconApple/IconApple';
+import IconCheeseburger from '../../components/Icon/Cheeseburger/IconCheeseburger';
 
 function Dashboard() {
   const userId = 12;
