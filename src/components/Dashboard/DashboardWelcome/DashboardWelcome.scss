@@ -1,0 +1,18 @@
+.welcome {
+  margin-bottom: 75px;
+  &__user {
+    h1 {
+      font-weight: 500;
+      font-size: 48px;
+      span {
+        color: #ff0101;
+      }
+    }
+  }
+  &__recap {
+    span {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}
