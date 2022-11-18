@@ -3,12 +3,54 @@
 .dashboard {
   display: flex;
   height: 100%;
+  width: 100%;
   min-height: 100%;
 
   &__aside {
+    width: 10%;
   }
   &__body {
-    padding: 0 109px;
-    padding-top: 68px;
+    width: 72%;
+    padding: 0 70px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  &__charts {
+    display: flex;
+
+    .chart-container {
+      margin-right: 30px;
+    }
+  }
+
+  &__charts-left {
+    width: 82%;
+
+    &__top {
+      margin-bottom: 30px;
+    }
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: 1500px) {
+        flex-wrap: wrap;
+      }
+
+      &__container {
+        width: 33%;
+        @media screen and (max-width: 1500px) {
+          width: 43%;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  &__charts-right {
+    margin-left: 30px;
+    @media screen and (max-width: 1080px) {
+      margin-left: 15px;
+    }
+    width: 18%;
   }
 }
