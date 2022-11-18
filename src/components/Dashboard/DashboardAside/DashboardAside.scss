@@ -15,6 +15,9 @@
   &__navbar {
     display: flex;
     margin-bottom: 150px;
+    li {
+      margin-bottom: 20px;
+    }
   }
   &__copyright {
     span {

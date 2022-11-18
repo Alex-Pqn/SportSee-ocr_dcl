@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import DefaultIconCard from '../../Default/DefaultIconCard/DefaultIconCard';
 
 import IconYoga from '../../Icon/IconYoga/IconYoga';
-import IconSwimming from '../../Icon/Swimming/IconSwimming';
-import IconCycling from '../../Icon/Cycling/IconCycling';
+import IconSwimming from '../../Icon/IconSwimming/IconSwimming';
+import IconCycling from '../../Icon/IconCycling/IconCycling';
 import IconAlter from '../../Icon/IconAlter/IconAlter';
 
 const DashboardAside = () => {
@@ -23,22 +23,22 @@ const DashboardAside = () => {
         <ul>
           <li>
             <Link to="/">
-              <YogaIconCard iconColor="#FF0101" cardColor="#FFFFFF" />
+              <YogaIconCard iconColor="#FF0101" />
             </Link>
           </li>
           <li>
             <Link to="/">
-              <SwimmingIconCard iconColor="#FF0101" cardColor="#FFFFFF" />
+              <SwimmingIconCard iconColor="#FF0101" />
             </Link>
           </li>
           <li>
             <Link to="/">
-              <CyclingIconCard iconColor="#FF0101" cardColor="#FFFFFF" />
+              <CyclingIconCard iconColor="#FF0101" />
             </Link>
           </li>
           <li>
             <Link to="/">
-              <AlterIconCard iconColor="#FF0101" cardColor="#FFFFFF" />
+              <AlterIconCard iconColor="#FF0101" />
             </Link>
           </li>
         </ul>
