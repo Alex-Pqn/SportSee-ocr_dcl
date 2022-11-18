@@ -1,0 +1,16 @@
+@import './../../../style/variables';
+
+.average-sessions-chart {
+  background-color: #ff0000;
+  border-radius: $charts-border-radius;
+
+  &__title {
+    position: absolute;
+    margin: 20px;
+    span {
+      opacity: 0.5;
+      color: white;
+      font-size: 15px;
+    }
+  }
+}
