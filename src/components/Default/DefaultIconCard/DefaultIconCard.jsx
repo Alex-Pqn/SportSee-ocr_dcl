@@ -1,9 +1,9 @@
 import './DefaultIconCard.scss';
 
-const DefaultIconCard = (IconComponent) => (props) => {
+const DefaultIconCard = (IconComponent) => ({ cardColor, iconColor }) => {
   return (
-    <div style={{ backgroundColor: props.cardColor }} className="icon-card">
-      <IconComponent color={props.iconColor} />
+    <div style={{ backgroundColor: cardColor }} className="icon-card">
+      <IconComponent color={iconColor} />
     </div>
   );
 };
