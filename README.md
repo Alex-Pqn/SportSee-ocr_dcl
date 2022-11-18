@@ -1,6 +1,6 @@
 <h1 id="app">SportSee App</h1>
 
-<h3>Développez un tableau de bord d'analytics avec React, OpenClassrooms</h3>
+<h3>Develop an analytics dashboard with React, OpenClassrooms</h3>
 
 SportSee is a startup dedicated to sports coaching. This repo contains all the source code to run the Sportsee Dashboard App. On this dashboard, users can see their past sessions, the number of calories burned and many other features.
 
