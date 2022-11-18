@@ -6,12 +6,12 @@ SportSee is a startup dedicated to sports coaching. This repo contains all the s
 
 <h2>Prerequisites</h2>
 
-- <a href="https://nodejs.org/en/">Node.js</a> `v16+` / <a href="https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable">Yarn</a>
+- <a href="https://nodejs.org/en/" target="_blank">Node.js</a> `v16+` / <a href="https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable" target="_blank">Yarn</a>
 
 - <a href="#backend-app">Backend API</a>
 
 - IDE
-  - It is recommended to use an IDE that supports React syntax, like <a href="https://code.visualstudio.com/download"> Visual Studio Code </a> and its extensions.
+  - It is recommended to use an IDE that supports React syntax, like <a href="https://code.visualstudio.com/download" target="_blank"> Visual Studio Code </a> and its extensions.
 
 <h2>Getting Started</h2>
 
@@ -35,7 +35,7 @@ The client runs on `http://localhost:3000` by default.
 
 <h2 id="jsdocs">JSDocs</h2>
 
-This project contains <a href="https://jsdoc.app/">JSDocs</a>. Any changes **_must include_** a complete JSDocs to :
+This project contains <a href="https://jsdoc.app/" target="_blank">JSDocs</a>. Any changes **_must include_** a complete JSDocs to :
 
 - Explain the logic of what you have implemented
 - Type the variables
