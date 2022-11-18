@@ -1,5 +1,7 @@
 import './DashboardWelcome.scss';
 
+import PropTypes from 'prop-types';
+
 const DashboardWelcome = ({ userName }) => {
   return (
     <div className="welcome">
@@ -13,6 +15,10 @@ const DashboardWelcome = ({ userName }) => {
       </div>
     </div>
   );
+};
+
+DashboardWelcome.propTypes = {
+  userName: PropTypes.string.isRequired,
 };
 
 export default DashboardWelcome;

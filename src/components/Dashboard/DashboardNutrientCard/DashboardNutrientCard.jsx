@@ -1,5 +1,7 @@
 import './DashboardNutrientCard.scss';
 
+import PropTypes from 'prop-types';
+
 import DefaultIconCard from '../../Default/DefaultIconCard/DefaultIconCard';
 
 const DashboardNutrientCard = ({
@@ -28,6 +30,15 @@ const DashboardNutrientCard = ({
       </div>
     </div>
   );
+};
+
+DashboardNutrientCard.propTypes = {
+  icon: PropTypes.func.isRequired,
+  iconColor: PropTypes.string.isRequired,
+  iconCardColor: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  data: PropTypes.number.isRequired,
+  unit: PropTypes.string.isRequired,
 };
 
 export default DashboardNutrientCard;

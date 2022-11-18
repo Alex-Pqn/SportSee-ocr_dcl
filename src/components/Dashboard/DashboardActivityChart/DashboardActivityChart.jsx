@@ -1,5 +1,7 @@
 import './DashboardActivityChart.scss';
 
+import PropTypes from 'prop-types';
+
 import {
   BarChart,
   YAxis,
@@ -73,6 +75,18 @@ const DashboardActivityChart = ({ data }) => {
       </ResponsiveContainer>
     </div>
   );
+};
+
+DashboardActivityChart.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape(
+      {
+        day: PropTypes.string.isRequired,
+        kilogram: PropTypes.number.isRequired,
+        calories: PropTypes.number.isRequired,
+      }.isRequired
+    ).isRequired
+  ).isRequired,
 };
 
 export default DashboardActivityChart;

@@ -1,5 +1,7 @@
 import './DashboardScoreChart.scss';
 
+import PropTypes from 'prop-types';
+
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 
 const COLORS = ['#FF0000', '#F8F8F8'];
@@ -39,6 +41,10 @@ const DashboardScoreChart = ({ value }) => {
       </ResponsiveContainer>
     </div>
   );
+};
+
+DashboardScoreChart.propTypes = {
+  value: PropTypes.number.isRequired,
 };
 
 export default DashboardScoreChart;

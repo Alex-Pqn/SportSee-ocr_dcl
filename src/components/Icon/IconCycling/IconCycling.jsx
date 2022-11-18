@@ -1,5 +1,7 @@
 import './IconCycling.scss';
 
+import PropTypes from 'prop-types';
+
 const IconCycling = ({ color }) => {
   return (
     <svg className="cycling-icon" viewBox="0 0 38 32">
@@ -9,6 +11,10 @@ const IconCycling = ({ color }) => {
       />
     </svg>
   );
+};
+
+IconCycling.propTypes = {
+  color: PropTypes.string.isRequired,
 };
 
 export default IconCycling;

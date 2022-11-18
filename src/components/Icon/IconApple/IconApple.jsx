@@ -1,5 +1,7 @@
 import './IconApple.scss';
 
+import PropTypes from 'prop-types';
+
 const IconApple = ({ color }) => {
   return (
     <svg
@@ -23,6 +25,10 @@ const IconApple = ({ color }) => {
       />
     </svg>
   );
+};
+
+IconApple.propTypes = {
+  color: PropTypes.string.isRequired,
 };
 
 export default IconApple;

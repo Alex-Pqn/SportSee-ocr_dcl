@@ -1,5 +1,7 @@
 import './IconAlter.scss';
 
+import PropTypes from 'prop-types';
+
 const IconAlter = ({ color }) => {
   return (
     <svg className="alter-icon" viewBox="0 0 32 32">
@@ -9,6 +11,10 @@ const IconAlter = ({ color }) => {
       />
     </svg>
   );
+};
+
+IconAlter.propTypes = {
+  color: PropTypes.string.isRequired,
 };
 
 export default IconAlter;

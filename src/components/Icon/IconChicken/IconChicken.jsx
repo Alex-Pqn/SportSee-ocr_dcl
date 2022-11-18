@@ -1,5 +1,7 @@
 import './IconChicken.scss';
 
+import PropTypes from 'prop-types';
+
 const IconChicken = ({ color }) => {
   return (
     <svg
@@ -15,6 +17,10 @@ const IconChicken = ({ color }) => {
       />
     </svg>
   );
+};
+
+IconChicken.propTypes = {
+  color: PropTypes.string.isRequired,
 };
 
 export default IconChicken;

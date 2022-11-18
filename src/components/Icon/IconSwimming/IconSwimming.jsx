@@ -1,5 +1,7 @@
 import './IconSwimming.scss';
 
+import PropTypes from 'prop-types';
+
 const IconSwimming = ({ color }) => {
   return (
     <svg className="swimming-icon" viewBox="0 0 32 32">
@@ -13,6 +15,10 @@ const IconSwimming = ({ color }) => {
       />
     </svg>
   );
+};
+
+IconSwimming.propTypes = {
+  color: PropTypes.string.isRequired,
 };
 
 export default IconSwimming;

@@ -1,5 +1,7 @@
 import './DashboardPerformanceChart.scss';
 
+import PropTypes from 'prop-types';
+
 import {
   Radar,
   RadarChart,
@@ -31,6 +33,15 @@ const DashboardPerformanceChart = ({ data }) => {
       </RadarChart>
     </ResponsiveContainer>
   );
+};
+
+DashboardPerformanceChart.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      kind: PropTypes.string.isRequired,
+      value: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
 
 export default DashboardPerformanceChart;

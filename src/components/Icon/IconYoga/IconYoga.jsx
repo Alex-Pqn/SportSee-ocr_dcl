@@ -1,5 +1,7 @@
 import './IconYoga.scss';
 
+import PropTypes from 'prop-types';
+
 const IconYoga = ({ color }) => {
   return (
     <svg className="yoga-icon" viewBox="0 0 36 32">
@@ -13,6 +15,10 @@ const IconYoga = ({ color }) => {
       />
     </svg>
   );
+};
+
+IconYoga.propTypes = {
+  color: PropTypes.string.isRequired,
 };
 
 export default IconYoga;

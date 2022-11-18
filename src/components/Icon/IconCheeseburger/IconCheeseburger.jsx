@@ -1,5 +1,7 @@
 import './IconCheeseburger.scss';
 
+import PropTypes from 'prop-types';
+
 const IconCheeseburger = ({ color }) => {
   return (
     <svg
@@ -25,6 +27,10 @@ const IconCheeseburger = ({ color }) => {
       />
     </svg>
   );
+};
+
+IconCheeseburger.propTypes = {
+  color: PropTypes.string.isRequired,
 };
 
 export default IconCheeseburger;

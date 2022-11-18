@@ -1,5 +1,7 @@
 import './DashboardAverageSessionsChart.scss';
 
+import PropTypes from 'prop-types';
+
 import { LineChart, Line, XAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 const DashboardAverageSessionsChart = ({ data }) => {
@@ -48,6 +50,17 @@ const DashboardAverageSessionsChart = ({ data }) => {
       </ResponsiveContainer>
     </div>
   );
+};
+
+DashboardAverageSessionsChart.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape(
+      {
+        day: PropTypes.string.isRequired,
+        sessionLength: PropTypes.number.isRequired,
+      }.isRequired
+    )
+  ).isRequired,
 };
 
 export default DashboardAverageSessionsChart;

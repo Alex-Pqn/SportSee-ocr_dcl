@@ -1,5 +1,7 @@
 import './IconEnergy.scss';
 
+import PropTypes from 'prop-types';
+
 const IconEnergy = ({ color }) => {
   return (
     <svg
@@ -15,6 +17,10 @@ const IconEnergy = ({ color }) => {
       />
     </svg>
   );
+};
+
+IconEnergy.propTypes = {
+  color: PropTypes.string.isRequired,
 };
 
 export default IconEnergy;
