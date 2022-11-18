@@ -1,5 +1,5 @@
 import { requestOptions } from '../_helpers/request-options';
-import { userRoutes } from '../config/api/user.config';
+import { userRoutes } from '../config/api/routes/user.routes.config';
 
 import UserModel from '../_models/user/user.model';
 import UserActivityModel from '../_models/user/user.activity';
