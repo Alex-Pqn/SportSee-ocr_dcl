@@ -1,0 +1,14 @@
+@import './../../../style/variables';
+
+.activity-chart {
+  border-radius: $charts-border-radius;
+  background-color: $charts-background-color;
+  padding: 25px 30px;
+
+  &__title {
+    span {
+    }
+  }
+  &__body {
+  }
+}
