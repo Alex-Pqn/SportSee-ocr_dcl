@@ -1,0 +1,10 @@
+.loader {
+  display: flex;
+  align-items: center;
+  margin: 5px 10px;
+  &__spinner {
+  }
+  &__message {
+    padding-left: 7px;
+  }
+}
