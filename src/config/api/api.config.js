@@ -1,5 +1,3 @@
-const apiUrl = 'http://localhost:3000';
-
 export const Environments = {
   production: 'production',
   development: 'development',
@@ -8,4 +6,4 @@ export const Environments = {
 
 export const NODE_ENV = Environments.development;
 
-export const getApi = () => apiUrl;
+export const getApi = () => process.env.REACT_APP_BASE_API_URL;
