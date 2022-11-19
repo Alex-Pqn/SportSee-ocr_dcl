@@ -27,7 +27,7 @@ Runs the app in development.
 
 `npm run start`
 
-The client runs on `http://localhost:3000` by default.
+The client runs on `http://localhost:3001` by default.
 
 **Run the client tests**
 
