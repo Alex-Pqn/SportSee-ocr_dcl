@@ -6,6 +6,11 @@ import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 
 const COLORS = ['#FF0000', '#F8F8F8'];
 
+/**
+ * Dashboard Score Chart
+ * Display the user score
+ * @param {number} value
+ */
 const DashboardScoreChart = ({ value }) => {
   const todayScore = [{ value: value }, { value: 1 - value }];
 

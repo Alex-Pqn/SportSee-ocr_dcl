@@ -22,6 +22,10 @@ import IconChicken from '../../components/Icon/IconChicken/IconChicken';
 import IconApple from '../../components/Icon/IconApple/IconApple';
 import IconCheeseburger from '../../components/Icon/IconCheeseburger/IconCheeseburger';
 
+/**
+ * Dashboard
+ * Display the dashboard page
+ */
 const Dashboard = () => {
   const navigate = useNavigate();
 
@@ -29,24 +33,33 @@ const Dashboard = () => {
   if (!userId) userId = getDefaultUserId();
   userId = parseInt(userId);
 
+  // User
   const [user, updateUser] = useState();
-  const [userActivity, updateUserActivity] = useState({});
-  const [userAverageSessions, updateUserAverageSessions] = useState({});
-  const [userPerformance, updateUserPerformance] = useState({});
-
   const [isUserLoading, updateUserLoading] = useState(true);
+
+  // User Activity
+  const [userActivity, updateUserActivity] = useState({});
   const [isUserActivityLoading, updateUserActivityLoading] = useState(true);
+
+  // User Average Sessions
+  const [userAverageSessions, updateUserAverageSessions] = useState({});
   const [
     isUserAverageSessionsLoading,
     updateUserAverageSessionsLoading,
   ] = useState(true);
+
+  // User Performance
+  const [userPerformance, updateUserPerformance] = useState({});
   const [isUserPerformanceLoading, updateUserPerformanceLoading] = useState(
     true
   );
 
-  useEffect(getData, [userId]);
+  useEffect(getData, [navigate, userId]);
 
   function getData() {
+    const redirectToErrorPage = () => navigate('/error');
+
+    // User
     getUserService()
       .findOne(userId)
       .then((user) => {
@@ -57,6 +70,8 @@ const Dashboard = () => {
         console.error(err);
         redirectToErrorPage();
       });
+
+    // User Activity
     getUserService()
       .findOneActivity(userId)
       .then((userActivity) => {
@@ -67,6 +82,8 @@ const Dashboard = () => {
         console.error(err);
         redirectToErrorPage();
       });
+
+    // User Average Sessions
     getUserService()
       .findOneAverageSessions(userId)
       .then((userAverageSessions) => {
@@ -77,6 +94,8 @@ const Dashboard = () => {
         console.error(err);
         redirectToErrorPage();
       });
+
+    // User Performance
     getUserService()
       .findOnePerformance(userId)
       .then((userPerformance) => {
@@ -88,8 +107,6 @@ const Dashboard = () => {
         redirectToErrorPage();
       });
   }
-
-  const redirectToErrorPage = () => navigate('/error');
 
   return (
     <div className="dashboard">

@@ -2,6 +2,10 @@ import './IconCycling.scss';
 
 import PropTypes from 'prop-types';
 
+/**
+ * Icon Cycling
+ * @param {string} color
+ */
 const IconCycling = ({ color }) => {
   return (
     <svg className="cycling-icon" viewBox="0 0 38 32">

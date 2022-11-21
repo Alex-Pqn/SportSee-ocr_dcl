@@ -4,6 +4,11 @@ import PropTypes from 'prop-types';
 
 import IconLoader from '../../Icon/IconLoader/IconLoader';
 
+/**
+ * Default Loader
+ * Display a loader with a message
+ * @param {string} message
+ */
 const DefaultLoader = ({ message }) => {
   return (
     <div className="loader">

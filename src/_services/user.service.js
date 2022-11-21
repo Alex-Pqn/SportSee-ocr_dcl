@@ -17,7 +17,7 @@ export const userService = {
  * GET: Find One
  * Retrieves user.
  * @param {Number} userId
- * @returns
+ * @returns {UserModel}
  */
 async function findOne(userId) {
   return fetch(userRoutes.getUser(userId), requestOptions.get())
@@ -35,7 +35,7 @@ async function findOne(userId) {
  * GET: Find One Activity
  * Retrieves user activity.
  * @param {Number} userId
- * @returns
+ * @returns {UserActivityModel}
  */
 async function findOneActivity(userId) {
   return fetch(userRoutes.getUserActivity(userId), requestOptions.get())
@@ -53,7 +53,7 @@ async function findOneActivity(userId) {
  * GET: Find One Average Sessions
  * Retrieves user average sessions.
  * @param {Number} userId
- * @returns
+ * @returns {UserAverageSessionsModel}
  */
 async function findOneAverageSessions(userId) {
   return fetch(userRoutes.getUserAverageSessions(userId), requestOptions.get())
@@ -72,7 +72,7 @@ async function findOneAverageSessions(userId) {
  * GET: Find One Performance
  * Retrieves user performance.
  * @param {Number} userId
- * @returns
+ * @returns {UserPerformanceModel}
  */
 async function findOnePerformance(userId) {
   return fetch(userRoutes.getUserPerformance(userId), requestOptions.get())

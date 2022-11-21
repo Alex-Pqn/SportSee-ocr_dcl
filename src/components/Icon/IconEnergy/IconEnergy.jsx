@@ -2,6 +2,10 @@ import './IconEnergy.scss';
 
 import PropTypes from 'prop-types';
 
+/**
+ * Icon Energy
+ * @param {string} color
+ */
 const IconEnergy = ({ color }) => {
   return (
     <svg

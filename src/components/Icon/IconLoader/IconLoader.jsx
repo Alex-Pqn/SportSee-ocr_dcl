@@ -1,5 +1,8 @@
 import './IconLoader.scss';
 
+/**
+ * Icon Loader
+ */
 const IconLoader = () => {
   return (
     <svg className="icon-loader" viewBox="0 0 38 38">

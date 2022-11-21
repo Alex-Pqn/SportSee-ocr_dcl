@@ -2,6 +2,9 @@ import './DefaultNavbar.scss';
 
 import { Link } from 'react-router-dom';
 
+/**
+ * Default Navbar
+ */
 const DefaultNavbar = () => {
   return (
     <nav className="navbar">

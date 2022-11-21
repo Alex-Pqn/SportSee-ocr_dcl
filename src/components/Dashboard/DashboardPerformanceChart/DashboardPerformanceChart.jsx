@@ -10,6 +10,13 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 
+/**
+ * Dashboard Performance Chart
+ * Display the user performance
+ * @param {Object} data
+ * @param {string} data.kind
+ * @param {number} data.value
+ */
 const DashboardPerformanceChart = ({ data }) => {
   return (
     <ResponsiveContainer

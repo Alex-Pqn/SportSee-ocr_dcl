@@ -2,6 +2,11 @@ import './DashboardWelcome.scss';
 
 import PropTypes from 'prop-types';
 
+/**
+ * Dashboard Welcome
+ * Display a welcome message
+ * @param {string} userName
+ */
 const DashboardWelcome = ({ userName }) => {
   return (
     <div className="welcome">

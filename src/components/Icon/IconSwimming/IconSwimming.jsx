@@ -2,6 +2,10 @@ import './IconSwimming.scss';
 
 import PropTypes from 'prop-types';
 
+/**
+ * Icon Swimming
+ * @param {string} color
+ */
 const IconSwimming = ({ color }) => {
   return (
     <svg className="swimming-icon" viewBox="0 0 32 32">

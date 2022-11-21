@@ -4,6 +4,13 @@ import PropTypes from 'prop-types';
 
 import { LineChart, Line, XAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
+/**
+ * Dashboard Average Sessions Chart
+ * Display the user average sessions
+ * @param {Object} data
+ * @param {string} data.day
+ * @param {number} data.sessionLength
+ */
 const DashboardAverageSessionsChart = ({ data }) => {
   return (
     <div className="average-sessions-chart">

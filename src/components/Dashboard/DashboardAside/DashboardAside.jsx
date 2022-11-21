@@ -9,6 +9,9 @@ import IconSwimming from '../../Icon/IconSwimming/IconSwimming';
 import IconCycling from '../../Icon/IconCycling/IconCycling';
 import IconAlter from '../../Icon/IconAlter/IconAlter';
 
+/**
+ * Dashboard Aside
+ */
 const DashboardAside = () => {
   const copyrightYear = new Date().getFullYear();
 

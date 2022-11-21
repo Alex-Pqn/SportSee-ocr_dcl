@@ -4,6 +4,16 @@ import PropTypes from 'prop-types';
 
 import DefaultIconCard from '../../Default/DefaultIconCard/DefaultIconCard';
 
+/**
+ * Dashboard Nutrient Card
+ * Display a nutriend card
+ * @param {Function} icon
+ * @param {string} iconColor
+ * @param {string} iconCardColor
+ * @param {string} title
+ * @param {number} data
+ * @param {string} unit
+ */
 const DashboardNutrientCard = ({
   icon,
   iconColor,

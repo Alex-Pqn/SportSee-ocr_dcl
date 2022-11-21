@@ -13,6 +13,14 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 
+/**
+ * Dashboard Activity Chart
+ * Display the user activity
+ * @param {Object} data
+ * @param {string} data.day
+ * @param {number} data.kilogram
+ * @param {number} data.calories
+ */
 const DashboardActivityChart = ({ data }) => {
   const legendStyle = {
     fontSize: '14px',

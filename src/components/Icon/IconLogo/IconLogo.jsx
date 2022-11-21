@@ -1,5 +1,8 @@
 import './IconLogo.scss';
 
+/**
+ * Icon Logo
+ */
 const IconLogo = () => {
   return (
     <svg className="logo-icon" viewBox="0 0 178 61">

@@ -2,6 +2,10 @@ import './IconChicken.scss';
 
 import PropTypes from 'prop-types';
 
+/**
+ * Icon Chicken
+ * @param {string} color
+ */
 const IconChicken = ({ color }) => {
   return (
     <svg

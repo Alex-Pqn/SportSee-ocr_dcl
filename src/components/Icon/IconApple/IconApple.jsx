@@ -2,6 +2,10 @@ import './IconApple.scss';
 
 import PropTypes from 'prop-types';
 
+/**
+ * Icon Apple
+ * @param {string} color
+ */
 const IconApple = ({ color }) => {
   return (
     <svg

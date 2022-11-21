@@ -2,6 +2,10 @@ import './IconAlter.scss';
 
 import PropTypes from 'prop-types';
 
+/**
+ * Icon Alter
+ * @param {string} color
+ */
 const IconAlter = ({ color }) => {
   return (
     <svg className="alter-icon" viewBox="0 0 32 32">

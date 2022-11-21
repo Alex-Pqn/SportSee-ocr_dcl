@@ -3,6 +3,9 @@ import './DefaultHeader.scss';
 import DefaultNavbar from '../DefaultNavbar/DefaultNavbar';
 import IconLogo from '../../Icon/IconLogo/IconLogo';
 
+/**
+ * Default Header
+ */
 const DefaultHeader = () => {
   return (
     <header className="header">
