@@ -5,7 +5,7 @@ import {
   getDefaultUserId,
 } from '../../config/api/services/user.service.config.js';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 import DashboardAside from '../../components/Dashboard/DashboardAside/DashboardAside';
 import DashboardWelcome from '../../components/Dashboard/DashboardWelcome/DashboardWelcome';
@@ -23,10 +23,10 @@ import IconApple from '../../components/Icon/IconApple/IconApple';
 import IconCheeseburger from '../../components/Icon/IconCheeseburger/IconCheeseburger';
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+
   let { userId } = useParams();
-
   if (!userId) userId = getDefaultUserId();
-
   userId = parseInt(userId);
 
   const [user, updateUser] = useState();
@@ -52,26 +52,44 @@ const Dashboard = () => {
       .then((user) => {
         updateUser(user);
         updateUserLoading(false);
+      })
+      .catch((err) => {
+        console.error(err);
+        redirectToErrorPage();
       });
     getUserService()
       .findOneActivity(userId)
       .then((userActivity) => {
         updateUserActivity(userActivity);
         updateUserActivityLoading(false);
+      })
+      .catch((err) => {
+        console.error(err);
+        redirectToErrorPage();
       });
     getUserService()
       .findOneAverageSessions(userId)
       .then((userAverageSessions) => {
         updateUserAverageSessions(userAverageSessions);
         updateUserAverageSessionsLoading(false);
+      })
+      .catch((err) => {
+        console.error(err);
+        redirectToErrorPage();
       });
     getUserService()
       .findOnePerformance(userId)
       .then((userPerformance) => {
         updateUserPerformance(userPerformance);
         updateUserPerformanceLoading(false);
+      })
+      .catch((err) => {
+        console.error(err);
+        redirectToErrorPage();
       });
   }
+
+  const redirectToErrorPage = () => navigate('/error');
 
   return (
     <div className="dashboard">
