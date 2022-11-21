@@ -19,6 +19,7 @@ function App() {
         <Route path="/">
           <Route index element={<Dashboard />} />
           <Route path="/:userId" element={<Dashboard />} />
+          <Route path="/error" element={<Error404 />} />
           <Route path="home" element={<Navigate to="/" />} />
           <Route path="*" element={<Error404 />} />
         </Route>
