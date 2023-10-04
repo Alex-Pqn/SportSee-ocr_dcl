@@ -74,4 +74,4 @@ npm run build
 
 ### Preview
 
-![CV](/SportSee-ocr_dcl/src/assets/SportSee.png)
+![SportSee](./src/assets/SportSee.png)
