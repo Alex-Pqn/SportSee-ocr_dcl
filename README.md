@@ -1,59 +1,77 @@
-<h1 id="app">SportSee App</h1>
+![SportSee Icon](./src/assets/logo.PNG)
 
-<h3>Develop an analytics dashboard with React, OpenClassrooms</h3>
+## Développez un tableau de bord d'analytics avec React - SportSee
 
-SportSee is a startup dedicated to sports coaching. This repo contains all the source code to run the Sportsee Dashboard App. On this dashboard, users can see their past sessions, the number of calories burned and many other features.
+### P12 - OpenClassrooms "Développeur Concepteur Logiciel"
+
+#### Contexte du projet
+
+Vous travaillez en tant que développeur chez SportSee, une startup dédiée au coaching sportif. En pleine croissance, l’entreprise va aujourd’hui lancer une nouvelle version de la page profil de l’utilisateur. Cette page va notamment permettre à l’utilisateur de suivre le nombre de sessions réalisées ainsi que le nombre de calories brûlées.
+
+Vous recevez ce matin un Slack de Charles, le Product Owner :
+
+> Hello ! Bon, c’est le grand jour aujourd’hui, on va s’attaquer à la nouvelle page profil utilisateur du site. Tiens, Léo (le designer) vient de me faire parvenir le [lien de la maquette](./src/assets/Maquette%20SportSee.pdf). Et voici [le kanban](https://sweet-trumpet-f3c.notion.site/Tableau-de-bord-SportSee-99f962746cae4bf7aa9fe0e436f2a220?pvs=4) avec les User Stories à intégrer pour ce projet. Pour ce sprint, il faut que tu intègres les US de la partie TODO (le reste sera au sprint suivant).
+
+Puis par la suite, Antoine, le Lead Developer, vous communique les précisions techniques sur la page profil :
+
+> L’objectif est de refaire la page profil avec React. Tu seras en charge de développer la page. Comme tu as pu le constater, le projet intègre des graphiques sur l’activité sportive de l’utilisateur. Je t’invite à utiliser soit D3, soit Recharts. <br/> Concernant les données, je t’ai créé [un backend](https://github.com/Alex-Pqn/SportSee-backend-ocr_dcl) utilisant NodeJS que tu peux trouver ici. Il va te permettre de réaliser tes calls HTTP et de récupérer des données d’exemple, tout y est décrit. Pour la gestion des calls en eux-mêmes, je t’invite à utiliser soit Fetch, soit Axios. Par contre, il est important que tu réalises les calls en dehors des composants React, dans un service par exemple. <br/> D’ailleurs, il faudra que tu commences le projet en réalisant un mock des données de l'API. Dès que ton projet sera fonctionnel, tu pourras t’attaquer à l’intégration de l’API. Il faudra également que tu crées une classe de modélisation des données pour t'assurer de toujours formater correctement les données de l'API avant de les utiliser.
+
+Après avoir fait le point avec Charles et Antoine, vous décidez d'attaquer le projet..
+
+#### Objectifs
+
+- Site web créé sous React 18.2 et React Router 6.4
+- Utilisation de composants réutilisables et validation des données grâce aux props React
+- Communication avec une API REST existante
+- Utilisation d'un service et de requêtes GET afin de récupérer les données de l'API
+- Création de chartes graphiques dynamiques avec la librairie `recharts`, en passant les données récupérées depuis l'API dans les chartes
+- Mise en place de mocks pour le développement et les tests
+- Architecture des dossiers et fichiers respectée
+- Utilisation de Sass et de la méthodologie BEM
+- Documentation du projet avec de la JSDocs
+
+---
 
 <h2>Prerequisites</h2>
 
-- <a href="https://nodejs.org/en/" target="_blank">Node.js</a> `v16+` / <a href="https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable" target="_blank">Yarn</a>
+- You will need to have Node and `npm` installed locally on your machine.
 
-- <a href="#backend-app">Backend API</a>
+- The [backend part](https://github.com/Alex-Pqn/SportSee-backend-ocr_dcl) that contains all the source code to run the micro API for the SportSee dashboard. The backend is not mandatory for testing the app, as integrated mocks are present by default in this project.
 
-- IDE
-  - It is recommended to use an IDE that supports React syntax, like <a href="https://code.visualstudio.com/download" target="_blank"> Visual Studio Code </a> and its extensions.
+> [!IMPORTANT]  
+> The default environment is the development environment, so it uses built-in mocks. If you want to use the API below and link it to the dashboard, go to the [src/config/api/api.config.js](./src/config/api/api.config.js) file and change `Environments.development` to `Environments.production` on line 7.
 
-<h2>Getting Started</h2>
+## Project setup
 
-**1. Clone the repository**
+### Install
 
-**2. Install dependencies**
+```
+npm install
+```
 
-`npm install`
+### Compiles and hot-reloads for development
 
-**3. Run the client**
+Runs the app in the development mode.
+Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 
-Runs the app in development.
+```
+npm run start
+```
 
-`npm run start`
+### Running tests
 
-The client runs on `http://localhost:3001` by default.
+```
+npm run test
+```
 
-**Run the client tests**
+### Compiles and minifies for production
 
-`npm run test`
+```
+npm run build
+```
 
-<h2 id="jsdocs">JSDocs</h2>
+---
 
-This project contains <a href="https://jsdoc.app/" target="_blank">JSDocs</a>. Any changes **_must include_** a complete JSDocs to :
+### Preview
 
-- Explain the logic of what you have implemented
-- Type the variables
-- Say what is expected/returned
-
-<h2 id="backend-app">Backend App</h2>
-
-The <a href="https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard">Backend App</a> contains all the source code to run the micro API for the sports analytics dashboard of SportSee.
-
-Otherwise, the <a href="#app">Frontend App</a> can be started with mocks.
-
-<h3>Possible endpoints</h3>
-
-The <a href="https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard">Backend App</a> includes four endpoints :
-
-- `http://localhost:3000/user/${userId}` - retrieves information from a user. This first endpoint includes the user id, user information (first name, last name and age), the current day's score (todayScore) and key data (calorie, macronutrient, etc.).
-- `http://localhost:3000/user/${userId}/activity` - retrieves a user's activity day by day with kilograms and calories.
-- `http://localhost:3000/user/${userId}/average-sessions` - retrieves the average sessions of a user per day. The week starts on Monday.
-- `http://localhost:3000/user/${userId}/performance` - retrieves a user's performance (energy, endurance, etc.).
-
-**Warning, currently only two users have been mocked. They have userId `12` and `18` respectively.**
+![CV](/SportSee-ocr_dcl/src/assets/SportSee.png)
