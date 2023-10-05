@@ -30,12 +30,10 @@ Après avoir fait le point avec Charles et Antoine, vous décidez d'attaquer le 
 - Utilisation de Sass et de la méthodologie BEM
 - Documentation du projet avec de la JSDocs
 
----
-
-<h2>Prerequisites</h2>
+## Prerequisites
 
 - You will need to have Node and `npm` installed locally on your machine.
-
+- 
 - The [backend part](https://github.com/Alex-Pqn/SportSee-backend-ocr_dcl) that contains all the source code to run the micro API for the SportSee dashboard. The backend is not mandatory for testing the app, as integrated mocks are present by default in this project.
 
 > [!IMPORTANT]  
@@ -70,8 +68,6 @@ npm run test
 npm run build
 ```
 
----
-
-### Preview
+## Preview
 
 ![SportSee](./src/assets/SportSee.png)
