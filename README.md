@@ -10,7 +10,7 @@ Vous travaillez en tant que développeur chez SportSee, une startup dédiée au 
 
 Vous recevez ce matin un Slack de Charles, le Product Owner :
 
-> Hello ! Bon, c’est le grand jour aujourd’hui, on va s’attaquer à la nouvelle page profil utilisateur du site. Tiens, Léo (le designer) vient de me faire parvenir le [lien de la maquette](./src/assets/Maquette%20SportSee.pdf). Et voici [le kanban](https://sweet-trumpet-f3c.notion.site/Tableau-de-bord-SportSee-99f962746cae4bf7aa9fe0e436f2a220?pvs=4) avec les User Stories à intégrer pour ce projet. Pour ce sprint, il faut que tu intègres les US de la partie TODO (le reste sera au sprint suivant).
+> Hello ! Bon, c’est le grand jour aujourd’hui, on va s’attaquer à la nouvelle page profil utilisateur du site. Tiens, Léo (le designer) vient de me faire parvenir le [lien de la maquette](./src/assets/Maquette%20SportSee.pdf). Et voici [le kanban](https://alex-pqn.notion.site/Tableau-de-bord-SportSee-99f962746cae4bf7aa9fe0e436f2a220?pvs=4) avec les User Stories à intégrer pour ce projet. Pour ce sprint, il faut que tu intègres les US de la partie TODO (le reste sera au sprint suivant).
 
 Puis par la suite, Antoine, le Lead Developer, vous communique les précisions techniques sur la page profil :
 
