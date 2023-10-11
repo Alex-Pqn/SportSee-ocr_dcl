@@ -18,7 +18,7 @@ Puis par la suite, Antoine, le Lead Developer, vous communique les précisions t
 
 Après avoir fait le point avec Charles et Antoine, vous décidez d'attaquer le projet..
 
-#### Objectifs
+#### Objectifs réalisés
 
 - Site web créé sous React 18.2 et React Router 6.4
 - Utilisation de composants réutilisables et validation des données grâce aux props React
