@@ -36,7 +36,7 @@ Après avoir fait le point avec Charles et Antoine, vous décidez d'attaquer le 
 - The [backend part](https://github.com/Alex-Pqn/SportSee-backend-ocr_dcl) that contains all the source code to run the micro API for the SportSee dashboard. The backend is not mandatory for testing the app, as integrated mocks are present by default in this project.
 
 > [!WARNING]  
-> The default environment is the development environment, so it uses built-in mocks. If you want to use the API below and link it to the dashboard, go to the [src/config/api/api.config.js](./src/config/api/api.config.js) file and change `Environments.development` to `Environments.production` on line 7.
+> The default environment is the development environment, so it uses built-in mocks. If you want to use the API above and link it to the dashboard, go to the [src/config/api/api.config.js](./src/config/api/api.config.js) file and change `Environments.development` to `Environments.production` on line 7.
 
 ## Project setup
 
