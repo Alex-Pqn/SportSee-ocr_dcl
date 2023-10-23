@@ -30,6 +30,8 @@ Après avoir fait le point avec Charles et Antoine, vous décidez d'attaquer le 
 - Utilisation de Sass et de la méthodologie BEM
 - Documentation du projet avec de la JSDocs
 
+### [Prévisualisation du site](https://alex-pqn.github.io/SportSee-ocr_dcl/)
+
 ## Prerequisites
 
 - You will need to have Node and `npm` installed locally on your machine.
@@ -44,6 +46,9 @@ Après avoir fait le point avec Charles et Antoine, vous décidez d'attaquer le 
 > The default environment is the development environment, so it uses built-in mocks. If you want to use the API above and link it to the dashboard, go to the [src/config/api/api.config.js](./src/config/api/api.config.js) file and change `Environments.development` to `Environments.production` on line 7.
 
 ## Project setup
+
+> [!NOTE]
+> A [Github Pages preview](https://alex-pqn.github.io/SportSee-ocr_dcl/) is also available for this project
 
 ### Install
 
