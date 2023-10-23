@@ -33,6 +33,11 @@ Après avoir fait le point avec Charles et Antoine, vous décidez d'attaquer le 
 ## Prerequisites
 
 - You will need to have Node and `npm` installed locally on your machine.
+
+| Node Version | Supported          |
+| ------------ | ------------------ |
+| 18.x         | :white_check_mark: |
+
 - The [backend part](https://github.com/Alex-Pqn/SportSee-backend-ocr_dcl) that contains all the source code to run the micro API for the SportSee dashboard. The backend is not mandatory for testing the app, as integrated mocks are present by default in this project.
 
 > [!WARNING]  
