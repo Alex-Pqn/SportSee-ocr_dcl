@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SportSee-ocr_dcl/static/css/main.79fd4682.css",
+    "main.js": "/SportSee-ocr_dcl/static/js/main.05e34511.js",
+    "static/js/787.cdb60bff.chunk.js": "/SportSee-ocr_dcl/static/js/787.cdb60bff.chunk.js",
+    "index.html": "/SportSee-ocr_dcl/index.html",
+    "main.79fd4682.css.map": "/SportSee-ocr_dcl/static/css/main.79fd4682.css.map",
+    "main.05e34511.js.map": "/SportSee-ocr_dcl/static/js/main.05e34511.js.map",
+    "787.cdb60bff.chunk.js.map": "/SportSee-ocr_dcl/static/js/787.cdb60bff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79fd4682.css",
+    "static/js/main.05e34511.js"
+  ]
+}
