@@ -1,6 +1,6 @@
-import './DashboardActivityChart.scss';
+import './DashboardActivityChart.scss'
 
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 import {
   BarChart,
@@ -11,7 +11,7 @@ import {
   Legend,
   CartesianGrid,
   ResponsiveContainer,
-} from 'recharts';
+} from 'recharts'
 
 /**
  * Dashboard Activity Chart
@@ -26,11 +26,11 @@ const DashboardActivityChart = ({ data }) => {
     fontSize: '14px',
     color: '#74798C',
     fontWeight: 'bold',
-  };
+  }
 
   const renderLegendStyle = (text) => {
-    return <span style={legendStyle}>{text}</span>;
-  };
+    return <span style={legendStyle}>{text}</span>
+  }
 
   return (
     <div className="activity-chart">
@@ -82,8 +82,8 @@ const DashboardActivityChart = ({ data }) => {
         </BarChart>
       </ResponsiveContainer>
     </div>
-  );
-};
+  )
+}
 
 DashboardActivityChart.propTypes = {
   data: PropTypes.arrayOf(
@@ -95,6 +95,6 @@ DashboardActivityChart.propTypes = {
       }.isRequired
     ).isRequired
   ).isRequired,
-};
+}
 
-export default DashboardActivityChart;
+export default DashboardActivityChart

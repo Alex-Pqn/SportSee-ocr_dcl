@@ -2,7 +2,6 @@
 
 .activity-chart {
   border-radius: $charts-border-radius;
-  background-color: $charts-background-color;
   padding: 25px 30px;
 
   &__title {
@@ -11,5 +10,12 @@
     }
   }
   &__body {
+  }
+}
+
+// Medium devices
+@media only screen and (max-width: 992px) {
+  .activity-chart {
+    padding: 0;
   }
 }

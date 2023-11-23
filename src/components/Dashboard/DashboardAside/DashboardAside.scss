@@ -6,10 +6,10 @@
   justify-content: center;
   align-items: center;
 
+  width: 117px;
   height: 100%;
   min-height: 100%;
 
-  width: 117px;
   background-color: $navbar-background-color;
 
   &__navbar {
@@ -17,6 +17,7 @@
     margin-bottom: 150px;
     li {
       margin-bottom: 20px;
+      list-style-type: none;
     }
   }
   &__copyright {
@@ -25,6 +26,32 @@
       font-size: 12px;
       writing-mode: vertical-rl;
       transform: rotate(180deg);
+    }
+  }
+}
+
+// Medium & Small devices
+@media only screen and (max-width: 992px) {
+  .activities-aside {
+    padding: 25px 0;
+    width: auto;
+    height: auto;
+    min-height: auto;
+
+    &__navbar {
+      margin-bottom: 20px;
+      ul {
+        display: flex;
+        li {
+          margin: 0 15px;
+        }
+      }
+    }
+    &__copyright {
+      span {
+        writing-mode: initial;
+        transform: initial;
+      }
     }
   }
 }

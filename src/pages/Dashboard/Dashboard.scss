@@ -6,9 +6,6 @@
   width: 100%;
   min-height: 100%;
 
-  &__aside {
-    width: 10%;
-  }
   &__body {
     width: 72%;
     padding: 0 70px;
@@ -32,25 +29,87 @@
     }
     &__bottom {
       display: flex;
-      justify-content: space-between;
-      @media screen and (max-width: 1500px) {
-        flex-wrap: wrap;
-      }
+      flex-wrap: wrap;
 
       &__container {
-        width: 33%;
-        @media screen and (max-width: 1500px) {
-          width: 43%;
-          margin-top: 10px;
-        }
+        margin-bottom: 15px;
+        width: 300px;
       }
     }
   }
   &__charts-right {
     margin-left: 30px;
-    @media screen and (max-width: 1080px) {
-      margin-left: 15px;
-    }
     width: 18%;
+  }
+}
+
+// Large devices
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .dashboard {
+    &__body {
+      padding: 0 55px 50px 55px;
+    }
+
+    &__charts-left {
+      width: 75%;
+    }
+    &__charts-right {
+      width: 25%;
+    }
+  }
+}
+
+// Medium devices
+@media only screen and (max-width: 992px) {
+  .dashboard {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    &__aside {
+      width: 100%;
+    }
+
+    &__body {
+      width: 90%;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+
+    &__charts {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__charts-left {
+      width: 100%;
+
+      &__top {
+        margin-bottom: 30px;
+      }
+      &__bottom {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &__container {
+          margin: 0 10px 25px 10px !important;
+        }
+
+        &::after {
+          content: '';
+          margin: 0 15px;
+          width: 300px;
+        }
+      }
+    }
+    &__charts-right {
+      margin-left: 0;
+      width: 100%;
+    }
+    &__nutrient-cards {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 }

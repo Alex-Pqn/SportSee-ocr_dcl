@@ -11,3 +11,14 @@
 
   border-radius: 6px;
 }
+
+// Small devices
+@media only screen and (max-width: 568px) {
+  .icon-card {
+    height: 44px;
+    width: 44px;
+    svg {
+      height: 25px;
+    }
+  }
+}

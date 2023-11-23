@@ -5,9 +5,33 @@
     display: flex;
     justify-content: space-around;
 
-    li a {
-      color: #ffffff;
-      font-size: 24px;
+    li {
+      list-style-type: none;
+      a {
+        color: #ffffff;
+        font-size: 24px;
+      }
     }
+  }
+}
+
+// Medium devices
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .navbar ul li a {
+    font-size: 18px;
+  }
+}
+
+// Small devices
+@media only screen and (min-width: 568px) and (max-width: 768px) {
+  .navbar ul li a {
+    font-size: 16px;
+  }
+}
+
+// Small devices
+@media only screen and (max-width: 568px) {
+  .navbar ul li a {
+    font-size: 13px;
   }
 }
