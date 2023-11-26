@@ -113,3 +113,13 @@
     }
   }
 }
+
+// Small devices
+@media only screen and (max-width: 392px) {
+  .dashboard {
+    &__activity-chart {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

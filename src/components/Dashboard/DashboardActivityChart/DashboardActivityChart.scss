@@ -19,3 +19,10 @@
     padding: 0;
   }
 }
+
+// Small devices
+@media only screen and (max-width: 392px) {
+  .activity-chart {
+    width: 305px;
+  }
+}
